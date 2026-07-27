@@ -48,8 +48,8 @@ export default function Home() {
     <main>
       <nav className="nav">
         <a className="brand" href="#top" aria-label="回到頁首">
-          <span className="brand-mark">龍</span>
-          <span>龍筋｜專業服務落地系統</span>
+          <span className="brand-mark">悠</span>
+          <span>悠妮瓏｜泰式男仕核心保養</span>
         </a>
         <a className="nav-cta" href="#apply">預約體驗課</a>
       </nav>
@@ -59,7 +59,7 @@ export default function Home() {
           <p className="eyebrow">專為已有按摩經驗的師傅設計</p>
           <h1>多一個客人願意付<br /><em>2,500 元以上</em>的新項目</h1>
           <p className="hero-lead">
-            兩個月內，把男士養護學成一套能介紹、能定價、能安全服務的完整流程。
+            兩個月內，把泰式男仕核心保養學成一套能介紹、能定價、能安全服務的完整流程。
             不是只多學一個手法，而是多一個可以真正落地的新收入項目。
           </p>
           <div className="hero-actions">
@@ -111,7 +111,7 @@ export default function Home() {
         </div>
         <div className="fit-list">
           <div><span>✓</span><p>你已經在幫客人按摩，有實際服務經驗</p></div>
-          <div><span>✓</span><p>你想增加男士養護項目，拉高客單價</p></div>
+          <div><span>✓</span><p>你想增加泰式男仕核心保養項目，拉高客單價</p></div>
           <div><span>✓</span><p>你希望有人把安全、話術、定價一次教清楚</p></div>
           <div className="not-fit"><span>×</span><p>如果你完全沒有按摩基礎，這門課暫時不適合你</p></div>
         </div>
@@ -197,7 +197,7 @@ export default function Home() {
           </ul>
         </div>
         <div className="price-card">
-          <div className="price-tag">泰式男士養護完整認證</div>
+          <div className="price-tag">悠妮瓏｜泰式男仕核心保養</div>
           <p>腹部養護・泰式拉筋・核心循環・卡賽進階</p>
           <div className="price"><small>完整方案</small><strong><sup>NT$</sup>58,800</strong></div>
           <div className="included"><span>7 大課程系統</span><span>3 個加碼工具</span><span>完課認證</span><span>90 天問答</span></div>
@@ -230,8 +230,8 @@ export default function Home() {
       </section>
 
       <footer>
-        <div className="brand"><span className="brand-mark">龍</span><span>龍筋｜專業服務落地系統</span></div>
-        <p>泰式男士養護完整認證</p>
+        <div className="brand"><span className="brand-mark">悠</span><span>悠妮瓏｜泰式男仕核心保養</span></div>
+        <p>悠妮瓏｜泰式男仕核心保養</p>
         <p>© 2026 All rights reserved.</p>
       </footer>
     </main>
