@@ -67,8 +67,8 @@ em { font-family: Georgia, "Noto Serif TC", serif; font-style: italic; font-weig
 .card-bottom strong { font-family: Georgia, serif; font-size: 24px; font-weight: 400; }
 .card-bottom span { font-size: 10px; color: var(--muted); }
 
-.statement, .program, .faq { padding: 120px 7vw; background: #fff; }
-.statement h2, .program h2, .faq h2, .bonus h2, .pricing h2, .final-cta h2, .guarantee h2, .fit h2 {
+.statement, .program, .faq, .testimonials { padding: 120px 7vw; background: #fff; }
+.statement h2, .program h2, .faq h2, .bonus h2, .pricing h2, .final-cta h2, .guarantee h2, .fit h2, .testimonials h2 {
   margin: 0; font-size: clamp(38px, 5vw, 68px); line-height: 1.12; letter-spacing: -.04em; font-weight: 500;
 }
 .statement h2 em { color: var(--accent); }
@@ -109,6 +109,21 @@ em { font-family: Georgia, "Noto Serif TC", serif; font-style: italic; font-weig
 .guarantee h2 { font-size: clamp(35px, 4vw, 56px); }
 .guarantee > div:last-child > p:not(.section-index) { color: var(--muted); font-size: 16px; line-height: 1.8; max-width: 700px; }
 .guarantee small { display: block; margin-top: 25px; color: #898f8c; }
+
+.testimonials { background: #f7f8f7; }
+.testimonial-head { display: grid; grid-template-columns: 1.2fr .8fr; gap: 8vw; align-items: end; }
+.testimonial-head > p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 70px; }
+.testimonial-card { background: #fff; border: 1px solid var(--line); }
+.testimonial-media { aspect-ratio: 4 / 3; background: linear-gradient(135deg, #e1e4e2, #f0f1f0); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #878e8a; padding: 25px; }
+.testimonial-media > span { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #aeb4b1; border-radius: 50%; font-size: 23px; font-weight: 300; }
+.testimonial-media p { margin: 18px 0 8px; font-size: 13px; font-weight: 700; }
+.testimonial-media small { font-size: 10px; letter-spacing: .1em; }
+.testimonial-copy { padding: 30px; }
+.testimonial-copy > small { color: var(--accent); font-size: 10px; font-weight: 700; letter-spacing: .16em; }
+.testimonial-copy blockquote { margin: 24px 0; min-height: 145px; font-family: Georgia, "Noto Serif TC", serif; font-size: 17px; line-height: 1.8; color: #3f4441; }
+.testimonial-copy > p { margin: 0; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
+.testimonial-note { margin: 22px 0 0; color: #8a908d; font-size: 11px; line-height: 1.7; }
 
 .pricing { padding: 120px 7vw; background: #1d201f; color: #f8f8f7; display: grid; grid-template-columns: 1fr .85fr; gap: 8vw; align-items: center; }
 .price-copy h2 { font-size: clamp(38px, 4.5vw, 62px); }
@@ -154,6 +169,9 @@ footer .brand-mark { border-color: #777; }
   .hero { padding-top: 70px; }
   .hero-card { min-height: 480px; }
   .section-head { grid-template-columns: 1fr; gap: 20px; }
+  .testimonial-head { grid-template-columns: 1fr; gap: 24px; }
+  .testimonial-grid { grid-template-columns: 1fr; }
+  .testimonial-copy blockquote { min-height: auto; }
   .statement-grid { grid-template-columns: 1fr; }
   .curriculum article { grid-template-columns: 45px 1fr 24px; padding: 20px 0; }
   .curriculum article p { grid-column: 2 / 3; margin: 0; }
@@ -177,8 +195,8 @@ footer .brand-mark { border-color: #777; }
   .ring-one { width: 260px; height: 260px; }
   .ring-two { width: 180px; height: 180px; }
   .outcome-center strong { font-size: 36px; }
-  .statement, .program, .faq, .fit, .bonus, .pricing, .guarantee, .final-cta { padding: 80px 22px; }
-  .statement h2, .program h2, .faq h2, .bonus h2, .pricing h2, .final-cta h2, .fit h2 { font-size: 38px; }
+  .statement, .program, .faq, .fit, .bonus, .pricing, .guarantee, .final-cta, .testimonials { padding: 80px 22px; }
+  .statement h2, .program h2, .faq h2, .bonus h2, .pricing h2, .final-cta h2, .fit h2, .testimonials h2 { font-size: 38px; }
   .statement-grid { margin-top: 50px; }
   .statement-item { padding: 28px; }
   .statement-item h3 { margin-top: 38px; }

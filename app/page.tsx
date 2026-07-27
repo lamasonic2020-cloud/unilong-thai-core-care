@@ -14,12 +14,33 @@ const bonuses = [
   ["給家人看的說明頁", "讓家人知道你學的是一套專業、正規的服務"],
 ];
 
+const testimonials = [
+  {
+    label: "學員見證 01",
+    prompt: "放學員操作照／與老師合照",
+    quote: "在這裡放一段學員最有感的成果，例如：學完後更敢介紹服務、流程更清楚，或成功開始接第一位客人。",
+    meta: "學員姓名・原本的按摩專長",
+  },
+  {
+    label: "學員見證 02",
+    prompt: "放 LINE 對話／回饋截圖",
+    quote: "建議選一則能證明「安全感與接客信心」的真實回饋，讓準學員看到課程不只有技術，也處理實務問題。",
+    meta: "學員姓名・上課梯次",
+  },
+  {
+    label: "學員見證 03",
+    prompt: "放完課證書／服務現場照",
+    quote: "建議放一則具體轉變：上課前卡在哪裡、上課後做到了什麼。內容越具體，見證越有說服力。",
+    meta: "學員姓名・所在城市",
+  },
+];
+
 const faqs = [
   ["完全沒做過按摩，也可以報名嗎？", "這門課專為已經在服務客人的按摩師傅設計；若你尚未有按摩基礎，這期不建議報名。"],
   ["外縣市需要常常跑台中嗎？", "不用。線下特訓集中在兩天一夜完成，外縣市學員只需要安排一次行程，其餘在線上學習與驗收。"],
   ["學完一定能賺多少錢嗎？", "課程不承諾收入數字。我們保證的是依進度練習、完成驗收後，能安全且完整地做出服務流程。"],
   ["如果跟不上或還做不完整呢？", "符合練習與交件條件，90 天內仍無法完成流程，可免費再參加一次線下課，問答時間也會延長。"],
-  ["可以分期嗎？", "可以，最高可分 36 期。分期不是折價，而是讓你不必一次拿出全部學費。"],
+  ["可以分期嗎？", "正式認證課程最高可分 36 期，讓你不必一次付清全部學費；體驗課需一次付清，不提供分期。"],
 ];
 
 export default function Home() {
@@ -48,7 +69,7 @@ export default function Home() {
           <div className="hero-proof">
             <span>小班 4 人</span><i />
             <span>台中實體特訓</span><i />
-            <span>最高 36 期</span>
+            <span>正式課最高 36 期</span>
           </div>
         </div>
 
@@ -136,15 +157,43 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="testimonials">
+        <div className="testimonial-head">
+          <div>
+            <p className="section-index">06 — 真實學員怎麼說</p>
+            <h2>成果不用我們說，<br />讓走過的人告訴你</h2>
+          </div>
+          <p>以下已預留三個客戶見證版位。取得業主提供的學員照片、對話截圖與真實評語後，即可直接替換上線。</p>
+        </div>
+        <div className="testimonial-grid">
+          {testimonials.map(({ label, prompt, quote, meta }) => (
+            <article className="testimonial-card" key={label}>
+              <div className="testimonial-media">
+                <span>＋</span>
+                <p>{prompt}</p>
+                <small>建議圖片比例 4:3</small>
+              </div>
+              <div className="testimonial-copy">
+                <small>{label}</small>
+                <blockquote>「{quote}」</blockquote>
+                <p>{meta}</p>
+              </div>
+            </article>
+          ))}
+        </div>
+        <p className="testimonial-note">＊目前為版位示意文字，上線投放廣告前請替換為已取得本人同意的真實學員內容。</p>
+      </section>
+
       <section className="pricing" id="apply">
         <div className="price-copy">
-          <p className="section-index light">06 — 小班完整認證方案</p>
+          <p className="section-index light">07 — 小班完整認證方案</p>
           <h2>一個班只收 4 位，<br />因為每個動作都要<em>親自看、親自調</em></h2>
           <p>名額不是行銷話術。老師需要逐一矯正、逐一確認，收多了就無法維持教學品質。</p>
           <ul>
             <li>體驗課費用可全額折抵</li>
             <li>刷卡、轉帳皆可</li>
-            <li>最高可分 36 期</li>
+            <li>正式課程最高可分 36 期</li>
+            <li>體驗課需一次付清，不提供分期</li>
           </ul>
         </div>
         <div className="price-card">
@@ -153,12 +202,12 @@ export default function Home() {
           <div className="price"><small>完整方案</small><strong><sup>NT$</sup>58,800</strong></div>
           <div className="included"><span>7 大課程系統</span><span>3 個加碼工具</span><span>完課認證</span><span>90 天問答</span></div>
           <a className="button inverse" href="#contact">立即預約體驗課 <span>↗</span></a>
-          <small className="note">體驗課現場報名享當次專屬方案，離場後即恢復原方案。</small>
+          <small className="note">體驗課需一次付清、不提供分期；現場報名正式課程享當次專屬方案。</small>
         </div>
       </section>
 
       <section className="faq">
-        <p className="section-index">07 — 報名前常見問題</p>
+        <p className="section-index">08 — 報名前常見問題</p>
         <h2>你可能也在想這些</h2>
         <div className="faq-list">
           {faqs.map(([q, a], index) => (
