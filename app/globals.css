@@ -105,7 +105,7 @@ em { font-family: Georgia, "Noto Serif TC", serif; font-style: italic; font-weig
 .bonus-list p { margin: 0; color: #adb2af; line-height: 1.7; }
 
 .guarantee { padding: 100px 10vw; background: #eef0ef; display: grid; grid-template-columns: 240px 1fr; gap: 7vw; align-items: center; }
-.guarantee-seal { width: 210px; height: 210px; border: 1px solid #9fa7a3; border-radius: 50%; display: grid; place-items: center; text-align: center; font-family: Georgia, "Noto Serif TC", serif; font-size: 31px; line-height: 1.35; color: #65716b; transform: rotate(-7deg); }
+.guarantee-seal { width: 210px; height: 210px; border: 1px solid #9fa7a3; border-radius: 50%; display: grid; place-items: center; text-align: center; font-family: Georgia, "Noto Serif TC", serif; font-size: 31px; line-height: 1.35; color: #65716b; }
 .guarantee h2 { font-size: clamp(35px, 4vw, 56px); }
 .guarantee > div:last-child > p:not(.section-index) { color: var(--muted); font-size: 16px; line-height: 1.8; max-width: 700px; }
 .guarantee small { display: block; margin-top: 25px; color: #898f8c; }
