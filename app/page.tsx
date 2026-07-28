@@ -40,7 +40,7 @@ const faqs = [
   ["外縣市需要常常跑台中嗎？", "不用。線下特訓集中在兩天一夜完成，外縣市學員只需要安排一次行程，其餘在線上學習與驗收。"],
   ["學完一定能賺多少錢嗎？", "課程不承諾收入數字。我們保證的是依進度練習、完成驗收後，能安全且完整地做出服務流程。"],
   ["如果跟不上或還做不完整呢？", "符合練習與交件條件，90 天內仍無法完成流程，可免費再參加一次線下課，問答時間也會延長。"],
-  ["可以分期嗎？", "正式認證課程最高可分 36 期，讓你不必一次付清全部學費；體驗課需一次付清，不提供分期。"],
+  ["可以分期嗎？", "完整認證課程最高可分 36 期，讓你不必一次付清全部學費。"],
 ];
 
 export default function Home() {
@@ -51,7 +51,7 @@ export default function Home() {
           <span className="brand-mark">悠</span>
           <span>悠妮瓏｜泰式男仕核心保養</span>
         </a>
-        <a className="nav-cta" href="#apply">預約體驗課</a>
+        <a className="nav-cta" href="#apply">立即報名</a>
       </nav>
 
       <section className="hero" id="top">
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="hero-proof">
             <span>小班 4 人</span><i />
             <span>台中實體特訓</span><i />
-            <span>正式課最高 36 期</span>
+            <span>最高可分 36 期</span>
           </div>
         </div>
 
@@ -190,10 +190,10 @@ export default function Home() {
           <h2>一個班只收 4 位，<br />因為每個動作都要<em>親自看、親自調</em></h2>
           <p>名額不是行銷話術。老師需要逐一矯正、逐一確認，收多了就無法維持教學品質。</p>
           <ul>
-            <li>體驗課費用可全額折抵</li>
+            <li>完整認證課程一次學會</li>
             <li>刷卡、轉帳皆可</li>
-            <li>正式課程最高可分 36 期</li>
-            <li>體驗課需一次付清，不提供分期</li>
+            <li>最高可分 36 期</li>
+            <li>小班 4 人逐一指導</li>
           </ul>
         </div>
         <div className="price-card">
@@ -201,8 +201,8 @@ export default function Home() {
           <p>腹部養護・泰式拉筋・核心循環・卡賽進階</p>
           <div className="price"><small>完整方案</small><strong><sup>NT$</sup>58,800</strong></div>
           <div className="included"><span>7 大課程系統</span><span>3 個加碼工具</span><span>完課認證</span><span>90 天問答</span></div>
-          <a className="button inverse" href="#contact">立即預約體驗課 <span>↗</span></a>
-          <small className="note">體驗課需一次付清、不提供分期；現場報名正式課程享當次專屬方案。</small>
+          <a className="button inverse" href="#contact">立即報名完整課程 <span>↗</span></a>
+          <small className="note">本頁僅販售完整認證課程；可刷卡、轉帳，最高可分 36 期。</small>
         </div>
       </section>
 
@@ -221,10 +221,10 @@ export default function Home() {
       <section className="final-cta" id="contact">
         <div>
           <p className="section-index light">準備好增加下一個服務項目了嗎？</p>
-          <h2>先來體驗，確認這套方法<br />適不適合你現在的階段。</h2>
+          <h2>直接加入完整認證課程，<br />把新項目真正做起來。</h2>
         </div>
         <div>
-          <a className="button white" href="#top">聯絡課程顧問預約 <span>↗</span></a>
+          <a className="button white" href="#top">聯絡課程顧問報名 <span>↗</span></a>
           <p>每班 4 位・台中實體特訓・可分期</p>
         </div>
       </section>
