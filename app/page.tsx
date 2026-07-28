@@ -17,18 +17,24 @@ const bonuses = [
 const testimonials = [
   {
     label: "學員見證 01",
-    prompt: "放學員操作照／與老師合照",
-    quote: "在這裡放一段學員最有感的成果，例如：學完後更敢介紹服務、流程更清楚，或成功開始接第一位客人。",
-    meta: "學員姓名・原本的按摩專長",
+    image: "testimonial-xiaoqin.png",
+    imageAlt: "學員小芹正在練習按摩操作",
+    prompt: "",
+    quote: "成為三寶媽後，我一度覺得自己只剩下媽媽與妻子的身分。從零基礎開始，第六堂課已經學會運用身體發力，能完成 90 分鐘油壓流程。現在能替家人、老公和公公按摩，不只找回自己的價值，也讓我和老公的感情變得更甜蜜、笑容更多了。",
+    meta: "小芹・三寶媽／零基礎學員",
   },
   {
     label: "學員見證 02",
+    image: "",
+    imageAlt: "",
     prompt: "放 LINE 對話／回饋截圖",
     quote: "建議選一則能證明「安全感與接客信心」的真實回饋，讓準學員看到課程不只有技術，也處理實務問題。",
     meta: "學員姓名・上課梯次",
   },
   {
     label: "學員見證 03",
+    image: "",
+    imageAlt: "",
     prompt: "放完課證書／服務現場照",
     quote: "建議放一則具體轉變：上課前卡在哪裡、上課後做到了什麼。內容越具體，見證越有說服力。",
     meta: "學員姓名・所在城市",
@@ -163,16 +169,22 @@ export default function Home() {
             <p className="section-index">06 — 真實學員怎麼說</p>
             <h2>成果不用我們說，<br />讓走過的人告訴你</h2>
           </div>
-          <p>以下已預留三個客戶見證版位。取得業主提供的學員照片、對話截圖與真實評語後，即可直接替換上線。</p>
+          <p>從零基礎開始，也能一步一步練出完整服務流程。更多學員照片與真實回饋將持續補上。</p>
         </div>
         <div className="testimonial-grid">
-          {testimonials.map(({ label, prompt, quote, meta }) => (
+          {testimonials.map(({ label, image, imageAlt, prompt, quote, meta }) => (
             <article className="testimonial-card" key={label}>
-              <div className="testimonial-media">
-                <span>＋</span>
-                <p>{prompt}</p>
-                <small>建議圖片比例 4:3</small>
-              </div>
+              {image ? (
+                <div className="testimonial-media testimonial-photo">
+                  <img src={image} alt={imageAlt} />
+                </div>
+              ) : (
+                <div className="testimonial-media">
+                  <span>＋</span>
+                  <p>{prompt}</p>
+                  <small>建議圖片比例 4:3</small>
+                </div>
+              )}
               <div className="testimonial-copy">
                 <small>{label}</small>
                 <blockquote>「{quote}」</blockquote>
@@ -181,7 +193,7 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <p className="testimonial-note">＊目前為版位示意文字，上線投放廣告前請替換為已取得本人同意的真實學員內容。</p>
+        <p className="testimonial-note">＊學員見證 02、03 目前為版位示意文字，取得照片與評語後即可替換。</p>
       </section>
 
       <section className="pricing" id="apply">

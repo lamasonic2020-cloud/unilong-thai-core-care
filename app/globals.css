@@ -116,6 +116,8 @@ em { font-family: Georgia, "Noto Serif TC", serif; font-style: italic; font-weig
 .testimonial-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 70px; }
 .testimonial-card { background: #fff; border: 1px solid var(--line); }
 .testimonial-media { aspect-ratio: 4 / 3; background: linear-gradient(135deg, #e1e4e2, #f0f1f0); display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; color: #878e8a; padding: 25px; }
+.testimonial-photo { padding: 0; overflow: hidden; }
+.testimonial-photo img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: 52% 29%; }
 .testimonial-media > span { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #aeb4b1; border-radius: 50%; font-size: 23px; font-weight: 300; }
 .testimonial-media p { margin: 18px 0 8px; font-size: 13px; font-weight: 700; }
 .testimonial-media small { font-size: 10px; letter-spacing: .1em; }
