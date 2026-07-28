@@ -16,12 +16,12 @@ const bonuses = [
 
 const testimonials = [
   {
-    label: "學員見證 01",
+    label: "店內師傅見證 01",
     image: "testimonial-xiaoqin.png",
     imageAlt: "學員小芹正在練習按摩操作",
     prompt: "",
-    quote: "成為三寶媽後，我一度覺得自己只剩下媽媽與妻子的身分。從零基礎開始，第六堂課已經學會運用身體發力，能完成 90 分鐘油壓流程。現在能替家人、老公和公公按摩，不只找回自己的價值，也讓我和老公的感情變得更甜蜜、笑容更多了。",
-    meta: "小芹・三寶媽／零基礎學員",
+    quote: "成為三寶媽後，小芹多年把生活重心放在家庭，也曾覺得自己只剩下媽媽與妻子的角色。進入店內從零開始培訓，透過老師拆解動作、反覆帶練，第六堂課便掌握身體發力，能完成 90 分鐘油壓流程。如今她已是店內師傅，不只找回自己的專業價值，也能用所學照顧老公與公公，讓家人的關係更親近、生活多了更多笑容。",
+    meta: "小芹・悠妮瓏店內師傅／三寶媽",
   },
   {
     label: "學員見證 02",
@@ -166,10 +166,10 @@ export default function Home() {
       <section className="testimonials">
         <div className="testimonial-head">
           <div>
-            <p className="section-index">06 — 真實學員怎麼說</p>
+            <p className="section-index">06 — 真實成長見證</p>
             <h2>成果不用我們說，<br />讓走過的人告訴你</h2>
           </div>
-          <p>從零基礎開始，也能一步一步練出完整服務流程。更多學員照片與真實回饋將持續補上。</p>
+          <p>小芹的歷程，呈現老師如何把動作拆解、反覆帶練，陪零基礎學習者一步一步練出完整服務流程。</p>
         </div>
         <div className="testimonial-grid">
           {testimonials.map(({ label, image, imageAlt, prompt, quote, meta }) => (
