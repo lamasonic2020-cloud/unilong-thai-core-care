@@ -19,25 +19,28 @@ const testimonials = [
     label: "店內師傅見證 01",
     image: "testimonial-xiaoqin.png",
     imageAlt: "學員小芹正在練習按摩操作",
+    imagePosition: "52% 29%",
     prompt: "",
     quote: "成為三寶媽後，小芹多年把生活重心放在家庭，也曾覺得自己只剩下媽媽與妻子的角色。進入店內從零開始培訓，透過老師拆解動作、反覆帶練，第二堂課便掌握身體發力，能完成 90 分鐘油壓流程。如今她已是店內師傅，不只找回自己的專業價值，也能用所學照顧老公與公公，讓家人的關係更親近、生活多了更多笑容。",
     meta: "小芹・悠妮瓏店內師傅／三寶媽",
   },
   {
     label: "學員見證 02",
-    image: "",
-    imageAlt: "",
-    prompt: "放 LINE 對話／回饋截圖",
-    quote: "建議選一則能證明「安全感與接客信心」的真實回饋，讓準學員看到課程不只有技術，也處理實務問題。",
-    meta: "學員姓名・上課梯次",
+    image: "testimonial-beginner.jpg",
+    imageAlt: "零基礎學員正在練習按摩操作",
+    imagePosition: "55% 50%",
+    prompt: "",
+    quote: "原本做行政工作，手部幾乎沒有力量，連用拳頭按摩都覺得使不上力。一天服務兩位客人便累到不行，做完一位還得休息一小時，也曾懷疑自己不適合這一行。從零學習完整流程、調整身體發力與操作位置後，現在不必只靠手硬撐，也能輕鬆、準確地放鬆客人，並獨立接案完成服務。",
+    meta: "店內師傅・行政轉職／零基礎",
   },
   {
     label: "學員見證 03",
-    image: "",
-    imageAlt: "",
-    prompt: "放完課證書／服務現場照",
-    quote: "建議放一則具體轉變：上課前卡在哪裡、上課後做到了什麼。內容越具體，見證越有說服力。",
-    meta: "學員姓名・所在城市",
+    image: "testimonial-experienced.jpg",
+    imageAlt: "擁有四年經驗的按摩師正在進行服務",
+    imagePosition: "58% 50%",
+    prompt: "",
+    quote: "已有四年按摩經驗，卻因店內缺乏進一步培訓，長期只靠手部出力，手腕反覆發炎、工作時必須戴護腕。雖然客人覺得按得不錯，放鬆感卻不夠持久，回訪黏著度也難提升。老師保留她原有的技術，再逐步調整位置與身體發力；熬過重新適應後，她現在能用更省力的方式深入放鬆客人，不再依賴護腕，也讓客人回訪更加穩定。",
+    meta: "資深按摩師・四年實務經驗",
   },
 ];
 
@@ -169,14 +172,14 @@ export default function Home() {
             <p className="section-index">06 — 真實成長見證</p>
             <h2>成果不用我們說，<br />讓走過的人告訴你</h2>
           </div>
-          <p>小芹的歷程，呈現老師如何把動作拆解、反覆帶練，陪零基礎學習者一步一步練出完整服務流程。</p>
+          <p>從零基礎建立完整流程，到協助資深師傅調整發力、保護雙手，老師會依每個人的程度拆解問題、逐步帶練。</p>
         </div>
         <div className="testimonial-grid">
-          {testimonials.map(({ label, image, imageAlt, prompt, quote, meta }) => (
+          {testimonials.map(({ label, image, imageAlt, imagePosition, prompt, quote, meta }) => (
             <article className="testimonial-card" key={label}>
               {image ? (
                 <div className="testimonial-media testimonial-photo">
-                  <img src={image} alt={imageAlt} />
+                  <img src={image} alt={imageAlt} style={{ objectPosition: imagePosition }} />
                 </div>
               ) : (
                 <div className="testimonial-media">
@@ -193,7 +196,7 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <p className="testimonial-note">＊學員見證 02、03 目前為版位示意文字，取得照片與評語後即可替換。</p>
+        <p className="testimonial-note">＊以上為不同學習背景的真實成長紀錄；實際成果仍依個人練習與執行情況而異。</p>
       </section>
 
       <section className="pricing" id="apply">
