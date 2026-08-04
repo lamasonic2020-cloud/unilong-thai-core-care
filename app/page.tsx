@@ -52,6 +52,8 @@ const faqs = [
   ["可以分期嗎？", "課程最高可分 36 期，讓你不必一次付清全部學費。"],
 ];
 
+const registrationUrl = "https://lin.ee/yP0iR03";
+
 export default function Home() {
   return (
     <main>
@@ -60,7 +62,7 @@ export default function Home() {
           <span className="brand-mark">悠</span>
           <span>悠妮瓏｜泰式男仕核心保養</span>
         </a>
-        <a className="nav-cta" href="#apply">立即報名</a>
+        <a className="nav-cta" href={registrationUrl} target="_blank" rel="noopener noreferrer">立即報名</a>
       </nav>
 
       <section className="hero" id="top">
@@ -72,7 +74,7 @@ export default function Home() {
             不是只多學一個手法，而是多一個可以真正落地的新收入項目。
           </p>
           <div className="hero-actions">
-            <a className="button primary" href="#apply">看看是否適合我 <span>↗</span></a>
+            <a className="button primary" href={registrationUrl} target="_blank" rel="noopener noreferrer">看看是否適合我 <span>↗</span></a>
             <a className="text-link" href="#program">先看完整課程</a>
           </div>
           <div className="hero-proof">
@@ -216,7 +218,7 @@ export default function Home() {
           <p>腹部養護・泰式拉筋・核心循環・卡賽進階</p>
           <div className="price"><small>完整方案</small><strong><sup>NT$</sup>58,800</strong></div>
           <div className="included"><span>7 大課程系統</span><span>3 個加碼工具</span><span>完課認證</span><span>一年課後問答</span></div>
-          <a className="button inverse" href="#contact">立即報名完整課程 <span>↗</span></a>
+          <a className="button inverse" href={registrationUrl} target="_blank" rel="noopener noreferrer">立即報名完整課程 <span>↗</span></a>
           <small className="note">本頁僅販售完整課程；可刷卡、轉帳，最高可分 36 期。</small>
         </div>
       </section>
@@ -239,7 +241,7 @@ export default function Home() {
           <h2>直接加入完整課程，<br />把新項目真正做起來。</h2>
         </div>
         <div>
-          <a className="button white" href="#top">聯絡課程顧問報名 <span>↗</span></a>
+          <a className="button white" href={registrationUrl} target="_blank" rel="noopener noreferrer">聯絡課程顧問報名 <span>↗</span></a>
           <p>每班 4 位・台中實體特訓・可分期</p>
         </div>
       </section>
