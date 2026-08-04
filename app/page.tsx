@@ -3,9 +3,9 @@ const curriculum = [
   ["02", "兩天一夜線下特訓", "台中實體密集練習，外縣市只需要安排一次行程。"],
   ["03", "一對一線上驗收", "拍攝實作影片交作業，由老師逐項回饋調整。"],
   ["04", "接客話術逐字稿", "從介紹、報價到界線管理，照著說就能開始。"],
-  ["05", "定價與療程模板", "單次怎麼收、療程怎麼組，直接套用到現有服務。"],
+  ["05", "定價與服務方案模板", "單次怎麼收、服務方案怎麼組，直接套用到現有項目。"],
   ["06", "完整認證證書", "完成課程與驗收，取得專業學習證明。"],
-  ["07", "90 天課後問答", "實際接客遇到問題，還有人陪你一起拆解。"],
+  ["07", "一年課後問答", "實際接客遇到問題，一年內都有人陪你一起拆解。"],
 ];
 
 const bonuses = [
@@ -48,8 +48,8 @@ const faqs = [
   ["完全沒做過按摩，也可以報名嗎？", "這門課專為已經在服務客人的按摩師傅設計；若你尚未有按摩基礎，這期不建議報名。"],
   ["外縣市需要常常跑台中嗎？", "不用。線下特訓集中在兩天一夜完成，外縣市學員只需要安排一次行程，其餘在線上學習與驗收。"],
   ["學完一定能賺多少錢嗎？", "課程不承諾收入數字。我們保證的是依進度練習、完成驗收後，能安全且完整地做出服務流程。"],
-  ["如果跟不上或還做不完整呢？", "符合練習與交件條件，90 天內仍無法完成流程，可免費再參加一次線下課，問答時間也會延長。"],
-  ["可以分期嗎？", "完整認證課程最高可分 36 期，讓你不必一次付清全部學費。"],
+  ["如果跟不上或還做不完整呢？", "完成並繳交作業、提交驗收後，若仍無法獨立完成流程，可於 90 天內申請免費復訓一次；課後問答提供一年。"],
+  ["可以分期嗎？", "課程最高可分 36 期，讓你不必一次付清全部學費。"],
 ];
 
 export default function Home() {
@@ -84,7 +84,7 @@ export default function Home() {
 
         <aside className="hero-card" aria-label="課程成果摘要">
           <div className="card-top">
-            <span>完整認證課程</span>
+            <span>專業培訓課程</span>
             <span className="live-dot">現正招生</span>
           </div>
           <div className="outcome-visual">
@@ -160,8 +160,8 @@ export default function Home() {
         <div className="guarantee-seal">學會<br />保證</div>
         <div>
           <p className="section-index">05 — 我們只保證能負責的事</p>
-          <h2>照進度練習、完成驗收，<br />還是做不出完整流程？</h2>
-          <p>符合條件並於 90 天內提出，可免費再參加一次線下課，課後問答時間同步延長。</p>
+          <h2>完成作業、提交驗收，<br />還是做不出完整流程？</h2>
+          <p>完成並繳交作業、提交驗收後，若仍無法獨立完成流程，可於 90 天內申請免費復訓一次。</p>
           <small>＊本課程保證學習成果，不承諾個人收入；實際成果依練習、執行與市場狀況而異。</small>
         </div>
       </section>
@@ -201,11 +201,11 @@ export default function Home() {
 
       <section className="pricing" id="apply">
         <div className="price-copy">
-          <p className="section-index light">07 — 小班完整認證方案</p>
+          <p className="section-index light">07 — 小班完整課程方案</p>
           <h2>一個班只收 4 位，<br />因為每個動作都要<em>親自看、親自調</em></h2>
           <p>名額不是行銷話術。老師需要逐一矯正、逐一確認，收多了就無法維持教學品質。</p>
           <ul>
-            <li>完整認證課程一次學會</li>
+            <li>7 大課程系統完整學習</li>
             <li>刷卡、轉帳皆可</li>
             <li>最高可分 36 期</li>
             <li>小班 4 人逐一指導</li>
@@ -215,9 +215,9 @@ export default function Home() {
           <div className="price-tag">悠妮瓏｜泰式男仕核心保養</div>
           <p>腹部養護・泰式拉筋・核心循環・卡賽進階</p>
           <div className="price"><small>完整方案</small><strong><sup>NT$</sup>58,800</strong></div>
-          <div className="included"><span>7 大課程系統</span><span>3 個加碼工具</span><span>完課認證</span><span>90 天問答</span></div>
+          <div className="included"><span>7 大課程系統</span><span>3 個加碼工具</span><span>完課認證</span><span>一年課後問答</span></div>
           <a className="button inverse" href="#contact">立即報名完整課程 <span>↗</span></a>
-          <small className="note">本頁僅販售完整認證課程；可刷卡、轉帳，最高可分 36 期。</small>
+          <small className="note">本頁僅販售完整課程；可刷卡、轉帳，最高可分 36 期。</small>
         </div>
       </section>
 
@@ -236,7 +236,7 @@ export default function Home() {
       <section className="final-cta" id="contact">
         <div>
           <p className="section-index light">準備好增加下一個服務項目了嗎？</p>
-          <h2>直接加入完整認證課程，<br />把新項目真正做起來。</h2>
+          <h2>直接加入完整課程，<br />把新項目真正做起來。</h2>
         </div>
         <div>
           <a className="button white" href="#top">聯絡課程顧問報名 <span>↗</span></a>
