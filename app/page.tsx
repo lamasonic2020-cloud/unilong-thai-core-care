@@ -23,6 +23,7 @@ const testimonials = [
     prompt: "",
     quote: "成為三寶媽後，小芹多年把生活重心放在家庭，也曾覺得自己只剩下媽媽與妻子的角色。進入店內從零開始培訓，透過老師拆解動作、反覆帶練，第二堂課便掌握身體發力，能完成 90 分鐘油壓流程。如今她已是店內師傅，不只找回自己的專業價值，也能用所學照顧老公與公公，讓家人的關係更親近、生活多了更多笑容。",
     meta: "小芹・悠妮瓏店內師傅／三寶媽",
+    featured: false,
   },
   {
     label: "學員見證 02",
@@ -32,6 +33,7 @@ const testimonials = [
     prompt: "",
     quote: "原本做行政工作，手部幾乎沒有力量，連用拳頭按摩都覺得使不上力。一天服務兩位客人便累到不行，做完一位還得休息一小時，也曾懷疑自己不適合這一行。從零學習完整流程、調整身體發力與操作位置後，現在不必只靠手硬撐，也能輕鬆、準確地放鬆客人，並獨立接案完成服務。",
     meta: "店內師傅・行政轉職／零基礎",
+    featured: false,
   },
   {
     label: "學員見證 03",
@@ -41,6 +43,17 @@ const testimonials = [
     prompt: "",
     quote: "已有四年按摩經驗，卻因店內缺乏進一步培訓，長期只靠手部出力，手腕反覆發炎、工作時必須戴護腕。雖然客人覺得按得不錯，放鬆感卻不夠持久，回訪黏著度也難提升。老師保留她原有的技術，再逐步調整位置與身體發力；熬過重新適應後，她現在能用更省力的方式深入放鬆客人，不再依賴護腕，也讓客人回訪更加穩定。",
     meta: "資深按摩師・四年實務經驗",
+    featured: false,
+  },
+  {
+    label: "深度學員見證 04",
+    image: "https://subtlespace.work/about.jpg",
+    imageAlt: "從工程師轉向按摩工作的學員",
+    imagePosition: "50% 42%",
+    prompt: "",
+    quote: "你原本是做什麼樣的工作？\n工程師\n\n原本的狀態是怎麼樣，為什麼想學按摩？\n那時候開始覺得自己不太想一直過朝九晚五的生活，希望未來可以有一份比較能自己安排時間，也更貼近自己興趣的工作。\n在學按摩之前，我已經有大概三年的身體覺察和身體練習經驗。這些練習讓我對身體的感覺慢慢變得比較敏銳，也發現自己很喜歡從身體去理解很多事情。\n所以後來想學按摩，就是想順著原本已經累積的這些經驗繼續走下去，看看能不能把對身體的興趣和敏感度，慢慢發展成一份工作。\n\n覺得跟我（方寊）學習後的改變？\n之前陸陸續續有學過一些筋膜理論跟應用，但跟老師學習之後，我才真正建立起一套完整的按摩流程。\n除了各種不同的手法之外，我覺得自己學到很重要的一件事，是怎麼在按摩的時候使用身體的重心。\n以前會很容易把注意力放在「手要怎麼做」，但真正開始學流程後，會發現重心怎麼轉換、力量怎麼從身體傳到手上，以及整個過程能不能保持流動，其實都很重要。\n老師在教學時也會確認我們是不是真的有找到重心。遇到某些手法做起來不順，也是會依照每個人的身體和使用習慣，去找比較適合的方式。\n這對我來說很有幫助，因為學到的不是只有一套固定的動作，而是開始知道怎麼使用自己的身體去工作。\n現在真的在替客人按摩時，很多當時學到的重心、流動和出力方式，也都一直在使用。面對不同的客人，也可以依照當下身體的狀況去調整做法，而不是只能照著一套固定的流程走。這也是我後來覺得很有意思的地方。",
+    meta: "課程學員・工程師轉職／三年身體練習經驗",
+    featured: true,
   },
 ];
 
@@ -177,8 +190,8 @@ export default function Home() {
           <p>從零基礎建立完整流程，到協助資深師傅調整發力、保護雙手，老師會依每個人的程度拆解問題、逐步帶練。</p>
         </div>
         <div className="testimonial-grid">
-          {testimonials.map(({ label, image, imageAlt, imagePosition, prompt, quote, meta }) => (
-            <article className="testimonial-card" key={label}>
+          {testimonials.map(({ label, image, imageAlt, imagePosition, prompt, quote, meta, featured }) => (
+            <article className={`testimonial-card${featured ? " testimonial-featured" : ""}`} key={label}>
               {image ? (
                 <div className="testimonial-media testimonial-photo">
                   <img src={image} alt={imageAlt} style={{ objectPosition: imagePosition }} />
@@ -192,7 +205,11 @@ export default function Home() {
               )}
               <div className="testimonial-copy">
                 <small>{label}</small>
-                <blockquote>「{quote}」</blockquote>
+                <blockquote>
+                  {quote.split("\n").map((paragraph, index) =>
+                    paragraph ? <p key={index}>{paragraph}</p> : <br key={index} />
+                  )}
+                </blockquote>
                 <p>{meta}</p>
               </div>
             </article>
