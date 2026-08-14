@@ -80,6 +80,7 @@ export default function Home() {
 
       <section className="hero" id="top">
         <div className="hero-copy">
+          <img className="school-logo" src="fang-ge-logo.jpg" alt="方閣技能學苑 Logo" />
           <p className="eyebrow">專為已有按摩經驗的師傅設計</p>
           <h1>多一個客人願意付<br /><em>2,500 元以上</em>的新項目</h1>
           <p className="hero-lead">
